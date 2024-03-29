@@ -1,0 +1,41 @@
+// CREATE A TRANSACTIO
+POST http://localhost:3333/transactions
+Content-Type: application/json
+
+{
+  "title": "New Transaction",
+  "amount": 166,
+  "type": "debit"
+}
+
+###
+
+// UPDATE A TRANSACTION
+PUT http://localhost:3333/transactions/8d9d39ee-1b2b-450a-bb0f-00c319b8d06b
+Content-Type: application/json
+
+{
+  "title": "update",
+  "amount": 100,
+  "type": "credit"
+}
+
+###
+
+// GET ALL TRANSACTION
+GET http://localhost:3333/transactions
+
+###
+
+// GET DETAIL TRANSACTION
+GET http://localhost:3333/transactions/8d9d39ee-1b2b-450a-bb0f-00c319b8d06b
+
+###
+
+// DELETE A TRANSACTION
+DELETE  http://localhost:3333/transactions/fcc71ab8-56f3-4083-89f0-4c70bd1a95ea
+
+###
+
+// GET SUMMARY TRANSACTION
+GET http://localhost:3333/transactions/summary
