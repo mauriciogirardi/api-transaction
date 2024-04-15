@@ -1,0 +1,32 @@
+{
+  "name": "api-gym",
+  "version": "1.0.0",
+  "description": "Api Gympass",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build"
+  },
+  "author": {
+    "email": "devmauriciogirardi@gmail.com",
+    "name": "Mauricio Girardi",
+    "url": "https://portfolio-mauricio-girardi.vercel.app/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "2.2.2",
+    "@types/node": "20.12.7",
+    "eslint": "9.0.0",
+    "eslint-plugin-simple-import-sort": "12.1.0",
+    "prettier": "3.2.5",
+    "tsup": "8.0.2",
+    "tsx": "4.7.2",
+    "typescript": "5.4.5"
+  },
+  "dependencies": {
+    "dotenv": "16.4.5",
+    "fastify": "4.26.2",
+    "zod": "3.22.4"
+  }
+}
